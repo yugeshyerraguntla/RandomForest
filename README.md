@@ -19,8 +19,9 @@ Bagging: - If few features are correlated, model will not get better beyond few 
 - Again if ech tree used the same dataset, every tree would be greatly affected by the same way by an anomaly or an outlier.
 
 ----------------------------------------------------------------
-***In BAGGING : Only Row Sampling***
-***In RandomF : Both Row Sampling and Feature Sampling***
+**In BAGGING : Only Row Sampling**
+
+**In RandomF : Both Row Sampling and Feature Sampling**
 
 In RF each tree sees only a subset of all the features  when deciding to split a node. (max_features = sqrt(n_features))
 
