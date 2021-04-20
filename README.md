@@ -27,3 +27,18 @@ In RF each tree sees only a subset of all the features  when deciding to split a
 ------------------------------------------------------------------
 HYPER PARAMETERS:
 
+n_estimators: a RF has multiple trees and we can set the number of trees we need in the random forest.
+
+max_features: tune to randomly select the number of features at each node. (sqrt(features) or ln(features))
+
+max_depth: We can decide the depth to which a tree can grow. This can be considered as one of the stopping criteria that restrict the growth of the tree.
+
+min_samples_split: minimum number of samples required to split a node and the minimum number of samples at the leaf node. Only if samples are more than 100 or specified, it will split
+
+min_samples_leaf: So if I save that the split can happen only when after the split, the number of samples in the leaf node comes out to be more than given.
+
+criteria: While deciding a split in decision trees, we have several criteria such as Gini impurity, information gain, chi-square, etc.
+
+bootstrap: True/False
+
+-----------------------------------------------------------------
